@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ApplicationInsights.Nodejsdemo.EmailService.Model
+namespace ApplicationInsights.Nodejsdemo.TaskProcessor.Models
 {
     public class TaskProcessingRequest
     {

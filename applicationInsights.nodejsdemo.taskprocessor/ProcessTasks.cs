@@ -1,18 +1,21 @@
 using System;
 using System.IO;
-using Newtonsoft.Json;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+
 using Microsoft.Azure.WebJobs;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using ApplicationInsights.Nodejsdemo.EmailService.Model;
-using ApplicationInsights.Nodejsdemo.EmailService.Helpers;
 using Microsoft.ApplicationInsights;
+using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.ApplicationInsights.Extensibility;
 
-namespace ApplicationInsights.Nodejsdemo.EmailService
+using Newtonsoft.Json;
+
+using ApplicationInsights.Nodejsdemo.TaskProcessor.Models;
+using ApplicationInsights.Nodejsdemo.TaskProcessor.Helpers;
+
+namespace ApplicationInsights.Nodejsdemo.TaskProcessor
 {
     public class ProcessTasks
     {

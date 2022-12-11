@@ -1,12 +1,14 @@
 ﻿using System;
-using MongoDB.Driver;
+
 using Microsoft.Extensions.Logging;
-using ApplicationInsights.Nodejsdemo.EmailService.Model;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
-using System.Xml.Linq;
 
-namespace ApplicationInsights.Nodejsdemo.EmailService.Helpers
+using MongoDB.Driver;
+
+using ApplicationInsights.Nodejsdemo.TaskProcessor.Models;
+
+namespace ApplicationInsights.Nodejsdemo.TaskProcessor.Helpers
 {
     public static class CosmosDBHelper
     {

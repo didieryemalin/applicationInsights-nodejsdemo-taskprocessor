@@ -1,13 +1,15 @@
-﻿
-using ApplicationInsights.Nodejsdemo.EmailService.Model;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Text;
 using System.Net.Http;
 using System.Threading.Tasks;
+
 using Microsoft.Extensions.Logging;
 
-namespace ApplicationInsights.Nodejsdemo.EmailService.Helpers
+using Newtonsoft.Json;
+
+using ApplicationInsights.Nodejsdemo.TaskProcessor.Models;
+
+namespace ApplicationInsights.Nodejsdemo.TaskProcessor.Helpers
 {
     public static class EmailHelper
     {

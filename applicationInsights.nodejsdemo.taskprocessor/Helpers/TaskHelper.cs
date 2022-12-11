@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using ApplicationInsights.Nodejsdemo.EmailService.Model;
 
-namespace ApplicationInsights.Nodejsdemo.EmailService.Helpers
+using ApplicationInsights.Nodejsdemo.TaskProcessor.Models;
+
+namespace ApplicationInsights.Nodejsdemo.TaskProcessor.Helpers
 {
     public static class TaskHelper
     {

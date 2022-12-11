@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ApplicationInsights.Nodejsdemo.EmailService.Model
+namespace ApplicationInsights.Nodejsdemo.TaskProcessor.Models
 {
     public class TodoTask
     {
