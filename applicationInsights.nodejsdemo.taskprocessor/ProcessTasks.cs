@@ -24,7 +24,7 @@ namespace ApplicationInsights.Nodejsdemo.TaskProcessor
         /// Using dependency injection will guarantee that you use the same configuration for telemetry collected automatically and manually.
         public ProcessTasks(TelemetryConfiguration telemetryConfiguration)
         {
-            this.telemetryClient = new TelemetryClient(telemetryConfiguration);
+            telemetryClient = new TelemetryClient(telemetryConfiguration);
         }
 
         [FunctionName("ProcessTasks")]
@@ -73,7 +73,7 @@ namespace ApplicationInsights.Nodejsdemo.TaskProcessor
                 log.LogCritical($"Failed to process tasks for email", ex);
             }
 
-            return new BadRequestObjectResult( new { Message = "failure"});
+            return new BadRequestObjectResult( new { Message = "failure" });
         }
     }
 }
